@@ -1,0 +1,44 @@
+.container {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 10rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		'contact map none'
+		'tm tm tm';
+	align-items: center;
+	background: none;
+}
+
+.ellipse {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	height: 160px;
+	width: 100vw;
+	background: rgb(35, 38, 39);
+	background: linear-gradient(
+		7deg,
+		rgba(117, 81, 175, 0.5) 0%,
+		rgba(56, 107, 205, 0.5) 100%
+	);
+	clip-path: ellipse(111% 100% at 9% 100%);
+	z-index: -1;
+}
+
+.contactInfo {
+	grid-area: contact;
+}
+
+.pageContent {
+	grid-area: map;
+}
+
+.tradeMark {
+	grid-area: tm;
+	margin: 1rem 1rem 0 1rem;
+	justify-self: left;
+	font-size: 0.8rem;
+}

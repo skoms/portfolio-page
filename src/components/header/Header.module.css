@@ -1,0 +1,65 @@
+.container {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	position: fixed;
+	top: 0;
+	background: none;
+}
+
+.ellipse {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	height: 110px;
+	width: 100vw;
+	background: rgb(42, 85, 215);
+	background: radial-gradient(
+		circle,
+		rgba(117, 165, 255, 0.5) 0%,
+		rgba(132, 255, 179, 0.5) 35%,
+		rgba(141, 168, 255, 0.5) 100%
+	);
+	clip-path: ellipse(70% 100% at 50% 0%);
+	z-index: -1;
+}
+
+.name {
+	justify-self: left;
+	margin-left: 1rem;
+}
+
+.logo {
+	height: 80px;
+	margin: -0.3rem 0.6rem -1.5rem 0.6rem;
+	pointer-events: none;
+	justify-self: center;
+}
+
+.navSection {
+	justify-self: right;
+	margin-right: 1rem;
+}
+
+.navSection a {
+	margin: 0 0.3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.logo :local {
+		animation: back-and-forth infinite 4s ease-in-out;
+	}
+}
+
+@keyframes back-and-forth {
+	0% {
+		transform: scale(0.9) translateY(-1px);
+	}
+	50% {
+		transform: scale(1) translateY(5px);
+	}
+	100% {
+		transform: scale(0.9) translateY(-1px);
+	}
+}
