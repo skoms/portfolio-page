@@ -1,0 +1,79 @@
+.container {
+	display: flex;
+	margin: 0 auto;
+	margin-top: -5rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	height: calc(100vh - 10rem);
+}
+
+.profilePic {
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.3);
+	max-height: 10rem;
+}
+
+.name {
+	font-size: 2.4rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.5rem;
+}
+
+.intro {
+	margin-bottom: 0.5rem;
+}
+
+.stack {
+	display: flex;
+}
+
+.iconDiv {
+	position: relative;
+	margin: 0.3rem 0.3rem;
+}
+
+.icon {
+	font-size: 1.8rem;
+	margin: 0 0.2rem 0 0.2rem;
+	color: rgba(255, 255, 255, 0.6);
+	transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+	color: white;
+}
+
+.letter {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'VT323', monospace;
+	font-size: 0.9rem;
+	right: -6px;
+	top: -6px;
+	z-index: -1;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+}
+
+.mailIcon {
+	opacity: 0.6;
+	transition: all 0.2s ease-in-out;
+}
+
+.mailIcon:hover {
+	opacity: 1;
+}
+
+.links img {
+	margin: 0 0.3rem;
+}
+
+.links a:hover {
+	text-decoration: none;
+}

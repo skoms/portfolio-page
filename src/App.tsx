@@ -4,12 +4,15 @@ import './styles/global.css'
 import styles from './App.module.css'
 import { Header } from './components/header/Header'
 import { Footer } from './components/footer/Footer'
+import { ProfileHead } from './components/profileHead/ProfileHead'
 
 function App() {
 	return (
 		<div className={styles.container}>
 			<Header />
-			<main></main>
+			<main>
+				<ProfileHead />
+			</main>
 			<Footer />
 		</div>
 	)
