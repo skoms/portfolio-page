@@ -5,6 +5,7 @@ import styles from './App.module.css'
 import { Header } from './components/header/Header'
 import { Footer } from './components/footer/Footer'
 import { ProfileHead } from './components/profileHead/ProfileHead'
+import { About } from './components/about/About'
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<main>
 				<ProfileHead />
+				<About />
 			</main>
 			<Footer />
 		</div>

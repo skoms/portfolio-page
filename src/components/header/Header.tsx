@@ -10,9 +10,27 @@ export const Header: React.FC = () => {
 				<img src='/images/logo.png' className={styles.logo} alt='logo' />
 			</a>
 			<div className={styles.navSection}>
-				<a href='/'>About Me</a>
-				<a href='/'>Projects</a>
-				<a href='/'>Contact Me</a>
+				<a href='/about'>
+					<img
+						src='https://img.icons8.com/material-sharp/30/FFFFFF/guest-male.png'
+						alt='profile icon'
+					/>
+					<p>About Me</p>
+				</a>
+				<a href='/projects'>
+					<img
+						src='https://img.icons8.com/ios-glyphs/30/FFFFFF/project.png'
+						alt='project icon'
+					/>
+					<p>Projects</p>
+				</a>
+				<a href='/contact'>
+					<img
+						src='https://img.icons8.com/ios-glyphs/30/FFFFFF/phone--v1.png'
+						alt='phone icon'
+					/>
+					<p>Contact Me</p>
+				</a>
 			</div>
 		</header>
 	)

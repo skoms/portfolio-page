@@ -1,7 +1,7 @@
 .container {
 	width: 100vw;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 2fr 1fr 2fr;
 	align-items: center;
 	position: fixed;
 	top: 0;
@@ -39,7 +39,23 @@
 
 .navSection {
 	justify-self: right;
+	display: flex;
 	margin-right: 1rem;
+}
+
+.navSection a {
+	margin: 0.15rem;
+	display: flex;
+}
+
+.navSection a img {
+	height: 1rem;
+	margin-bottom: -0.2rem;
+}
+
+.navSection p {
+	margin-left: 0.1rem;
+	margin-right: 0.3rem;
 }
 
 .navSection a {

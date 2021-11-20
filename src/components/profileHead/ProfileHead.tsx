@@ -1,18 +1,11 @@
 import React from 'react'
 import styles from './ProfileHead.module.css'
-import Helmet from 'react-helmet'
 
 export const ProfileHead: React.FC = () => {
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<link
-					rel='stylesheet'
-					href='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css'
-				/>
-			</Helmet>
 			<img className={styles.profilePic} src='/images/me.jpg' alt='HeadShot' />
-			<h1 className={styles.name}>Andreas Skomsoy</h1>
+			<h1 className={styles.name}>Andreas Skomsøy</h1>
 			<h3 className={styles.intro}>Developer, Life-long Learner & Optimist</h3>
 			<div className={styles.stack}>
 				<div className={styles.iconDiv}>
