@@ -7,7 +7,7 @@ body {
 	background: linear-gradient(
 		-45deg,
 		rgba(153, 195, 254, 1) 0%,
-		rgba(68, 94, 223, 1) 20%,
+		rgb(87, 112, 240) 20%,
 		rgba(102, 178, 251, 1) 40%,
 		rgba(123, 132, 236, 1) 60%,
 		rgba(83, 132, 215, 1) 80%,
@@ -66,14 +66,36 @@ code {
 		monospace;
 }
 
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	height: calc(100vh - 3rem - 4rem);
+	background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(
+		0deg,
+		rgb(128, 84, 250),
+		rgb(52, 154, 250),
+		rgb(90, 253, 204)
+	);
+	border-radius: 10px;
+}
+
 @keyframes moving-gradient {
 	0% {
 		background-position: 0% 25%;
 	}
-	33% {
-		background-position: 40% 80%;
-	}
-	66% {
+	50% {
 		background-position: 100% 80%;
 	}
 	100% {
