@@ -22,12 +22,17 @@
 		rgba(141, 168, 255, 0.5) 100%
 	);
 	clip-path: ellipse(70% 100% at 50% 0%);
-	z-index: -1;
+	z-index: 1;
 }
 
 .name {
 	justify-self: left;
 	margin-left: 1rem;
+	z-index: 2;
+}
+
+.homeLink {
+	z-index: 2;
 }
 
 .logo {
@@ -35,12 +40,14 @@
 	margin: -0.3rem 0.6rem -1.5rem 0.6rem;
 	pointer-events: none;
 	justify-self: center;
+	z-index: 2;
 }
 
 .navSection {
 	justify-self: right;
 	display: flex;
 	margin-right: 1rem;
+	z-index: 2;
 }
 
 .navSection a {

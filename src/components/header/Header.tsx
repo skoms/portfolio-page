@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
 		<header className={styles.container}>
 			<div className={styles.ellipse}></div>
 			<h4 className={styles.name}>Andreas Skomsøy</h4>
-			<a href='#top'>
+			<a href='#top' className={styles.homeLink}>
 				<img src='/images/logo.png' className={styles.logo} alt='logo' />
 			</a>
 			<div className={styles.navSection}>
