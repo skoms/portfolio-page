@@ -28,6 +28,7 @@
 
 .stack {
 	display: flex;
+	z-index: -1;
 }
 
 .iconDiv {
@@ -64,6 +65,7 @@
 .links {
 	display: flex;
 	align-items: center;
+	z-index: -1;
 }
 
 .mailIcon {

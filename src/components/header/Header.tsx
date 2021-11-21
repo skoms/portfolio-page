@@ -6,16 +6,16 @@ export const Header: React.FC = () => {
 		<header className={styles.container}>
 			<div className={styles.ellipse}></div>
 			<h4 className={styles.name}>Andreas Skomsøy</h4>
-			<a href='/'>
+			<a href='#top'>
 				<img src='/images/logo.png' className={styles.logo} alt='logo' />
 			</a>
 			<div className={styles.navSection}>
-				<a href='/about'>
+				<a href='#about'>
 					<img
 						src='https://img.icons8.com/material-sharp/30/FFFFFF/guest-male.png'
 						alt='profile icon'
 					/>
-					<p>About Me</p>
+					<p>About</p>
 				</a>
 				<a href='/projects'>
 					<img
@@ -24,12 +24,12 @@ export const Header: React.FC = () => {
 					/>
 					<p>Projects</p>
 				</a>
-				<a href='/contact'>
+				<a href='#contact'>
 					<img
 						src='https://img.icons8.com/ios-glyphs/30/FFFFFF/phone--v1.png'
 						alt='phone icon'
 					/>
-					<p>Contact Me</p>
+					<p>Contact</p>
 				</a>
 			</div>
 		</header>

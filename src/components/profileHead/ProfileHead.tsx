@@ -3,7 +3,7 @@ import styles from './ProfileHead.module.css'
 
 export const ProfileHead: React.FC = () => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id='top'>
 			<img className={styles.profilePic} src='/images/me.jpg' alt='HeadShot' />
 			<h1 className={styles.name}>Andreas Skomsøy</h1>
 			<h3 className={styles.intro}>Developer, Life-long Learner & Optimist</h3>
