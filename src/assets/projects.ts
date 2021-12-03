@@ -82,7 +82,6 @@ export const PROJECTS: Project[] = [
 		picture: '/images/ionic-application.png',
 		links: {
 			repo: 'https://github.com/skoms/yoobic-ionic',
-			demo: 'https://researchers-refuge.herokuapp.com/',
 		},
 		technologies: [
 			{
@@ -114,7 +113,6 @@ export const PROJECTS: Project[] = [
 		picture: '/images/stencil-component.png',
 		links: {
 			repo: 'https://github.com/skoms/yoobic-stencil',
-			demo: 'https://researchers-refuge.herokuapp.com/',
 		},
 		technologies: [
 			{
@@ -142,7 +140,6 @@ export const PROJECTS: Project[] = [
 		picture: '/images/golf-tournament.png',
 		links: {
 			repo: 'https://github.com/skoms/cx-squared-golf',
-			demo: 'https://researchers-refuge.herokuapp.com/',
 		},
 		technologies: [
 			{
