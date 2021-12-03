@@ -3,8 +3,20 @@ import styles from './Footer.module.css'
 import { Helmet } from 'react-helmet'
 
 export const Footer: React.FC = () => {
+	const scrollTo = (id: string) => {
+		if (id !== 'header') {
+			const element = document.getElementById(id)
+			element?.scrollIntoView({
+				block: 'center',
+				behavior: 'smooth',
+			})
+		} else {
+			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+		}
+	}
+
 	return (
-		<footer className={styles.container}>
+		<footer className={styles.container} id='footer'>
 			<Helmet>
 				<link
 					rel='stylesheet'
@@ -39,21 +51,21 @@ export const Footer: React.FC = () => {
 			</div>
 			<div className={styles.pageContent}>
 				<h4>Content</h4>
-				<a href='/'>
+				<button onClick={() => scrollTo('about')}>
 					<img
 						src='https://img.icons8.com/material-sharp/30/FFFFFF/guest-male.png'
 						alt='profile icon'
 					/>
 					<p>About Me</p>
-				</a>
-				<a href='/'>
+				</button>
+				<button onClick={() => scrollTo("Researcher's Refuge")}>
 					<img
 						src='https://img.icons8.com/ios-glyphs/30/FFFFFF/project.png'
 						alt='project icon'
 					/>
 					<p>Projects</p>
-				</a>
-				<a href='/'>
+				</button>
+				<a href='https://github.com/skoms/portfolio-page'>
 					<img
 						src='https://img.icons8.com/ios-glyphs/30/FFFFFF/code.png'
 						alt='code icon'

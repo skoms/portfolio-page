@@ -11,6 +11,18 @@
 	background: none;
 }
 
+.container button {
+	background: none;
+	border: none;
+	color: white;
+	padding: 0;
+	font-size: 0.9rem;
+}
+
+.container button:hover {
+	cursor: pointer;
+}
+
 .container h4 {
 	margin-bottom: 0.3rem;
 }
@@ -47,6 +59,20 @@
 .container a img {
 	height: 1rem;
 	margin-bottom: -0.2rem;
+}
+
+.container button {
+	margin: 0.15rem;
+	display: flex;
+}
+
+.container button img {
+	height: 1rem;
+	margin-bottom: -0.2rem;
+}
+
+.container button:hover {
+	text-decoration: underline;
 }
 
 .container p {

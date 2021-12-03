@@ -8,6 +8,18 @@
 	background: none;
 }
 
+.container button {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1rem;
+	padding: 0;
+}
+
+.container button:hover {
+	cursor: pointer;
+}
+
 .ellipse {
 	display: block;
 	position: absolute;
@@ -50,12 +62,16 @@
 	z-index: 2;
 }
 
-.navSection a {
+.navSection button {
 	margin: 0.15rem;
 	display: flex;
 }
 
-.navSection a img {
+.navSection button:hover {
+	text-decoration: underline;
+}
+
+.navSection button img {
 	height: 1rem;
 	margin-bottom: -0.2rem;
 }
@@ -65,7 +81,7 @@
 	margin-right: 0.3rem;
 }
 
-.navSection a {
+.navSection button {
 	margin: 0 0.3rem;
 }
 

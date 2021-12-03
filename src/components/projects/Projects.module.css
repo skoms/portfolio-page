@@ -1,0 +1,12 @@
+.container {
+	margin-top: 2rem;
+	padding: 2rem 0;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.invisible {
+	opacity: 0;
+}

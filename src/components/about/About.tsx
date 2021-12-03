@@ -8,7 +8,7 @@ export const About: React.FC = () => {
 		intersectionRef,
 		{
 			root: null,
-			rootMargin: '30% 0% 0% 100%',
+			rootMargin: '-8% 0% 0% 100%',
 			threshold: 1,
 		}
 	)
@@ -54,6 +54,7 @@ export const About: React.FC = () => {
 						</li>
 						<li>
 							👨‍✈️ My childhood dream like many was to become a airplane pilot
+							and/or Zookeeper
 						</li>
 						<li>
 							🖥️ My first introduction to computers was through the game 'Bubble
