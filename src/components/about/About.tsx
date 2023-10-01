@@ -47,15 +47,15 @@ export const About: React.FC = () => {
 					<h4 className={styles.title}>✨ Fun facts</h4>
 					<ol>
 						<li>
-							🐉 I have lived 4 years in China and speak fluent Mandarin Chinese
+							🐉 I spent 4 years in China and speak fluent Mandarin Chinese
 						</li>
 						<li>
-							🌍 I started reading encyclopedias at the age of 6, with an
-							encyclopedia of the World's countries and cultures
+							🌍 I started reading encyclopedias at the age of 6, starting with
+							an encyclopedia on the World's countries and cultures
 						</li>
 						<li>
-							👨‍✈️ My childhood dream like many was to become a airplane pilot
-							and/or Zookeeper
+							👨‍✈️ My childhood dream like many was to become a airplane pilot or
+							Zookeeper
 						</li>
 						<li>
 							🖥️ My first introduction to computers was through the game 'Bubble
