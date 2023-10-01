@@ -8,7 +8,7 @@ export const ProfileHead: React.FC = () => {
 		intersectionRef,
 		{
 			root: null,
-			rootMargin: '-20% 0% 0% 100%',
+			rootMargin: '-10% 0% 0% 100%',
 			threshold: 1,
 		}
 	);
