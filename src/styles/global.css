@@ -95,14 +95,14 @@ code {
 .hide {
 	z-index: -1;
 	opacity: 0;
-	animation: slide-out 0.2s forwards;
+	animation: slide-out 0.35s forwards;
 	transition: all 0.35s ease-in-out;
 }
 
 /* Used for intersections */
 .show {
 	opacity: 1;
-	animation: slide-in 0.2s forwards;
+	animation: slide-in 0.35s forwards;
 	transition: all 0.35s ease-in-out;
 }
 

@@ -8,15 +8,15 @@ export const About: React.FC = () => {
 		intersectionRef,
 		{
 			root: null,
-			rootMargin: '-8% 0% 0% 100%',
-			threshold: 0.8,
+			rootMargin: '-80px 0% 100px 100%',
+			threshold: 1,
 		}
 	);
 
 	return (
 		<div
 			className={`${styles.container} ${
-				intersection && intersection.intersectionRatio < 0.8 ? 'hide' : 'show'
+				intersection && intersection.intersectionRatio < 1 ? 'hide' : 'show'
 			}`}
 			id='about'
 			ref={intersectionRef}

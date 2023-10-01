@@ -15,15 +15,15 @@ export const Project: React.FC<ProjectProps> = ({
 		intersectionRef,
 		{
 			root: null,
-			rootMargin: '-10% 0% 0% 100%',
-			threshold: 0.8,
+			rootMargin: '-60px 0% 50px 100%',
+			threshold: 1,
 		}
 	);
 
 	return (
 		<div
 			className={`${styles.container} ${
-				intersection && intersection.intersectionRatio < 0.8 ? 'hide' : 'show'
+				intersection && intersection.intersectionRatio < 1 ? 'hide' : 'show'
 			}`}
 			ref={intersectionRef}
 			id={title}
