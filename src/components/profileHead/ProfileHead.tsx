@@ -1,9 +1,9 @@
-import React, { useRef } from 'react'
-import styles from './ProfileHead.module.css'
-import { useIntersection } from 'react-use'
+import React, { useRef } from 'react';
+import styles from './ProfileHead.module.css';
+import { useIntersection } from 'react-use';
 
 export const ProfileHead: React.FC = () => {
-	const intersectionRef = useRef(null)
+	const intersectionRef = useRef(null);
 	const intersection: IntersectionObserverEntry | null = useIntersection(
 		intersectionRef,
 		{
@@ -11,7 +11,7 @@ export const ProfileHead: React.FC = () => {
 			rootMargin: '-20% 0% 0% 100%',
 			threshold: 1,
 		}
-	)
+	);
 
 	return (
 		<div className={styles.container} id='top'>
@@ -28,19 +28,19 @@ export const ProfileHead: React.FC = () => {
 				/>
 				<h1 className={styles.name}>Andreas Skomsøy</h1>
 				<h3 className={styles.intro}>
-					Developer, Life-long Learner & Optimist
+					Frontend Developer, Life-long Learner & Optimist
 				</h3>
 				<div className={styles.stack}>
 					<a
 						target='_blank'
 						rel='noreferrer'
-						href='https://www.postgresql.org/'
+						href='https://www.mongodb.com/'
 						className={styles.iconDiv}
 					>
-						<h2 className={styles.letter}>P</h2>
+						<h2 className={styles.letter}>M</h2>
 						<i
-							className={`devicon-postgresql-plain ${styles.icon}`}
-							title='PostgreSQL'
+							className={`devicon-mongodb-plain ${styles.icon}`}
+							title='MongoDB'
 						/>
 					</a>
 					<a
@@ -58,13 +58,13 @@ export const ProfileHead: React.FC = () => {
 					<a
 						target='_blank'
 						rel='noreferrer'
-						href='https://reactjs.org/'
+						href='https://angular.io/'
 						className={styles.iconDiv}
 					>
-						<h2 className={styles.letter}>R</h2>
+						<h2 className={styles.letter}>A</h2>
 						<i
-							className={`devicon-react-original ${styles.icon}`}
-							title='React.js'
+							className={`devicon-angularjs-plain ${styles.icon}`}
+							title='Angular'
 						/>
 					</a>
 					<a
@@ -97,16 +97,8 @@ export const ProfileHead: React.FC = () => {
 							title='LinkedIn'
 						/>
 					</a>
-					<a href='mailto:andrew.m.s.97@hotmail.com'>
-						<img
-							src='https://img.icons8.com/material-outlined/32/FFFFFF/mail.png'
-							alt='mail icon'
-							title='Mail'
-							className={styles.mailIcon}
-						/>
-					</a>
 				</nav>
 			</div>
 		</div>
-	)
-}
+	);
+};
