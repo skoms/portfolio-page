@@ -11,14 +11,14 @@
 		'pic tech';
 	gap: 1rem;
 	transform: translateX(-100%);
-	background: rgba(0, 0, 0, 0.3);
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0));
 	border-radius: 0 0.75rem 0.75rem 0;
 }
 
 .backgroundImageContainer {
 	grid-area: pic;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 100%;
 	background-position: center top;
 	max-width: 30rem;
 }
@@ -82,9 +82,9 @@
 	margin: 0.3rem 0.5rem;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1300px) {
 	.container {
-		margin: 2rem 27vw 2rem auto;
-		padding: 2rem 3vw 2rem 30vw;
+		margin: 2rem 20vw 2rem auto;
+		padding: 2rem 3vw 2rem 23vw;
 	}
 }

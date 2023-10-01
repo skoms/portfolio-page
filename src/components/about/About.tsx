@@ -1,34 +1,35 @@
-import React, { useRef } from 'react'
-import styles from './About.module.css'
-import { useIntersection } from 'react-use'
+import React, { useRef } from 'react';
+import styles from './About.module.css';
+import { useIntersection } from 'react-use';
 
 export const About: React.FC = () => {
-	const intersectionRef = useRef(null)
+	const intersectionRef = useRef(null);
 	const intersection: IntersectionObserverEntry | null = useIntersection(
 		intersectionRef,
 		{
 			root: null,
 			rootMargin: '-8% 0% 0% 100%',
-			threshold: 1,
+			threshold: 0.8,
 		}
-	)
+	);
 
 	return (
 		<div
 			className={`${styles.container} ${
-				intersection && intersection.intersectionRatio < 1 ? 'hide' : 'show'
+				intersection && intersection.intersectionRatio < 0.8 ? 'hide' : 'show'
 			}`}
 			id='about'
 			ref={intersectionRef}
 		>
 			<h2>👋 Hello there!</h2>
 			<p>
-				I am Andreas Myklebust Skomsøy, an aspiring Web Developer from Norway
+				I am Andreas Myklebust Skomsøy, a Norwegian
 				<img
 					src='/images/norway-flag.png'
 					alt='norwegian-flag'
 					className={styles.flag}
-				/>
+				/>{' '}
+				Frontend Developer working in London
 			</p>
 			<div className={styles.grid}>
 				<div className={styles.hobbies}>
@@ -63,12 +64,12 @@ export const About: React.FC = () => {
 						</li>
 						<li>
 							👨‍🍳🌶️ I'm a pretty decent cook and I love spicy food, so I often
-							make spicy dishes from India and China( especially Szechuan
+							make spicy dishes from India and China (especially Szechuan
 							Cuisine 四川菜)
 						</li>
 					</ol>
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};

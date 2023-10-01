@@ -1,19 +1,19 @@
-import React from 'react'
-import styles from './Footer.module.css'
-import { Helmet } from 'react-helmet'
+import React from 'react';
+import styles from './Footer.module.css';
+import { Helmet } from 'react-helmet';
 
 export const Footer: React.FC = () => {
 	const scrollTo = (id: string) => {
 		if (id !== 'header') {
-			const element = document.getElementById(id)
+			const element = document.getElementById(id);
 			element?.scrollIntoView({
 				block: 'center',
 				behavior: 'smooth',
-			})
+			});
 		} else {
-			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 		}
-	}
+	};
 
 	return (
 		<footer className={styles.container} id='footer'>
@@ -26,20 +26,19 @@ export const Footer: React.FC = () => {
 			<div className={styles.ellipse} />
 			<div className={styles.contactInfo}>
 				<h4>Contact & Media</h4>
-				<a href='mailto:andrew.m.s.97@hotmail.com'>
-					<img
-						src='https://img.icons8.com/material-outlined/32/FFFFFF/mail.png'
-						alt='mail icon'
-						title='Mail'
+				<a href='https://github.com/askomsoey'>
+					<i
+						className={`devicon-github-original ${styles.icon}`}
+						title='Work GitHub'
 					/>
-					<p>Email</p>
+					<p>Work GitHub</p>
 				</a>
 				<a href='https://github.com/skoms'>
 					<i
 						className={`devicon-github-original ${styles.icon}`}
 						title='GitHub'
 					/>
-					<p>GitHub</p>
+					<p>GitHub (Inactive)</p>
 				</a>
 				<a href='https://www.linkedin.com/in/andreas-skoms%C3%B8y-01a027188/'>
 					<i
@@ -74,8 +73,8 @@ export const Footer: React.FC = () => {
 				</a>
 			</div>
 			<div className={styles.tradeMark}>
-				<p>©2021 - Andreas Myklebust Skomsøy</p>
+				<p>©2021 - Present | Andreas Myklebust Skomsøy</p>
 			</div>
 		</footer>
-	)
-}
+	);
+};

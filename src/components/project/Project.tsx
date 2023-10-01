@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
-import styles from './Project.module.css'
-import { Project as ProjectProps, Tech } from '../../assets/projects'
-import { useIntersection } from 'react-use'
+import React, { useRef } from 'react';
+import styles from './Project.module.css';
+import { Project as ProjectProps, Tech } from '../../assets/projects';
+import { useIntersection } from 'react-use';
 
 export const Project: React.FC<ProjectProps> = ({
 	title,
@@ -10,20 +10,20 @@ export const Project: React.FC<ProjectProps> = ({
 	links,
 	technologies,
 }: ProjectProps) => {
-	const intersectionRef = useRef(null)
+	const intersectionRef = useRef(null);
 	const intersection: IntersectionObserverEntry | null = useIntersection(
 		intersectionRef,
 		{
 			root: null,
 			rootMargin: '-10% 0% 0% 100%',
-			threshold: 1,
+			threshold: 0.8,
 		}
-	)
+	);
 
 	return (
 		<div
 			className={`${styles.container} ${
-				intersection && intersection.intersectionRatio < 1 ? 'hide' : 'show'
+				intersection && intersection.intersectionRatio < 0.8 ? 'hide' : 'show'
 			}`}
 			ref={intersectionRef}
 			id={title}
@@ -64,5 +64,5 @@ export const Project: React.FC<ProjectProps> = ({
 				))}
 			</div>
 		</div>
-	)
-}
+	);
+};
